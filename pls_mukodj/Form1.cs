@@ -13,6 +13,7 @@ namespace pls_mukodj
 {
     public partial class Form1 : Form
     {
+        //.
         PortfolioEntities context = new PortfolioEntities();
         List<Tick> Ticks;
         List<PortfolioItem> Portfolio = new List<PortfolioItem>();
