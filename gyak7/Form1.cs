@@ -33,6 +33,7 @@ namespace gyak7
                 for (int i = 0; i < Population.Count; i++)
                 {
                     // Ide jön a szimulációs lépés
+                    SimStep(year, Population[i]);
                 }
 
                 int nbrOfMales = (from x in Population
