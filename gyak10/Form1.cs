@@ -33,6 +33,7 @@ namespace gyak10
                 gc.AddPlayer(nbrOfSteps);
             }
             gc.Start();
+            
 
         }
 
@@ -71,6 +72,15 @@ namespace gyak10
             }
             gc.Start();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            gc.ResetCurrentLevel();
+            gc.AddPlayer(winnerBrain.Clone());
+            gc.AddPlayer();
+            ga.Focus();
+            gc.Start(true);
         }
     }
 }
